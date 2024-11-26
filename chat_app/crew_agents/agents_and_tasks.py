@@ -4,7 +4,7 @@ import os
 import litellm
 litellm.set_verbose=False
 
-from chat_app.tools import ProductReviewsTool, TargetedPromosTool, OrderLookupTool, RetrievePoliciesTool
+from chat_app.tools import TargetedPromosTool, RetrievePoliciesTool
 
 
 llm = LLM(model=os.environ["AWS_BEDROCK_MODEL"])
@@ -31,33 +31,6 @@ ecommerce_policies_agent = Agent(
         Try to keep final answers in markdown format.
         """)), # This is the goal that the agent is trying to achieve
     tools=[RetrievePoliciesTool()],
-    allow_delegation=False, # Agents can delegate tasks or questions to one another, ensuring that each task is handled by the most suitable agent
-    max_iter=2, # Maximum number of iterations the agent can perform before being forced to give its best answer
-    max_retry_limit=3, # Maximum number of retries for an agent to execute a task when an error occurs
-    llm=llm, # Defines the LLM to use for the agent
-    verbose=True # Configures the internal logger to provide detailed execution logs, aiding in debugging and monitoring
-)
-
-customer_service_agent = Agent(
-    role=dedent((
-        """
-        Helpful Customer Service Agent
-        """)), # Think of this as the job title
-    backstory=dedent((
-        """
-        You are a helpful customer service agent and attempt to provide information requested by the user.
-        The questions will be specific to product reviews and past orders. Try your best to answer them.
-        """)), # This is the backstory of the agent, this helps the agent to understand the context of the task
-    goal=dedent((
-        """
-        Perform the task assigned to you and use the tools available to execute your task.
-        The ProductReviewsTool can be used to retrieve reviews for a given product ID
-        and the OrderLookupTool can be used to retrieve orders by order ID or customer ID.
-        If you are unable to answer the question, try delegating the task to the sales_agent.
-        Try to keep final answers in markdown format.
-        """)), # This is the goal that the agent is trying to achieve
-    tools=[ProductReviewsTool(),
-           OrderLookupTool()],
     allow_delegation=False, # Agents can delegate tasks or questions to one another, ensuring that each task is handled by the most suitable agent
     max_iter=2, # Maximum number of iterations the agent can perform before being forced to give its best answer
     max_retry_limit=3, # Maximum number of retries for an agent to execute a task when an error occurs

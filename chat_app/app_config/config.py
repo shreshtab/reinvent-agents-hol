@@ -2,8 +2,6 @@ from pathlib import Path
 from os import environ
 import random
 
-from chat_app.chat_utils import get_top_offers
-
 user_ids = [
 "018d3918d60c2e821b654b8eb4cfde55",
 "2ad313a8287a197d9b303c380a6981db",
@@ -77,14 +75,8 @@ class Initialize:
 
         self.user_id = random.choice(user_ids)
 
-        # Get User Promos
-        self.user_promos = get_top_offers(self.user_id)
-        print(self.user_promos)
-
     def reset_config(self):
         self.user_id = random.choice(user_ids)
-        self.user_promos = get_top_offers(self.user_id)
-        print(self.user_promos)
 
 
 
