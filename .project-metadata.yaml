@@ -1,0 +1,39 @@
+name: Agent-Powered Workflows 
+description: |
+  This AMP demonstrates an Agentic workflow application which uses a variety of existing tools and agents to help users traverse varied and difficult problems
+author: Cloudera Inc.
+specification_version: 1.0
+prototype_version: 1.0
+date: "2024-09-28"
+
+environment_variables:
+  # AWS_ACCESS_KEY_ID:
+  #   default: "aws_key"
+  #   description: >-
+  #     AWS Key ID. Check the Amazon Bedrock documentation for information about role access
+  # AWS_SECRET_ACCESS_KEY:
+  #   default: "aws_secret_key"
+  #   description: >-
+  #     AWS Secret Key
+  # AWS_DEFAULT_REGION:
+  #   default: "us-east-1"
+  #   description: >-
+  #     AWS region
+  # AWS_BEDROCK_MODEL:
+  #   default: "bedrock/us.anthropic.claude-3-5-sonnet-20240620-v1:0"
+  #   description: >-
+  #     AWS Bedrock model ID
+
+runtimes:
+  - editor: JupyterLab
+    kernel: Python 3.10
+    edition: Standard
+
+tasks:
+  - type: run_session
+    name: Install Dependencies
+    script: 0_install_prerequisites/download_reqs.py
+    short_summary: Install Dependencies
+    kernel: python3
+    cpu: 2
+    memory: 12
