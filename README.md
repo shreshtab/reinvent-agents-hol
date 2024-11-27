@@ -1,4 +1,4 @@
-# Large Language Models with Cloudera AI
+# RAG-based AI Agents with Cloudera AI
 
 The goal of this hands-on lab is to explore Cloudera AI through the lens of the Agentic [Retreival Augmented Generation](https://arxiv.org/abs/2312.10997) (RAG) architecture for Large Language Models. Starting from a simple Jupyter notebook and finishing with a complete chatbot application, participants will get to know some of the key Cloudera AI features and advantages. In a real-world scenario, changing business requirements and technology advancements requires agility and Cloudera AI is a great tool to enable Data Science practitioners to build use cases quickly.
 
