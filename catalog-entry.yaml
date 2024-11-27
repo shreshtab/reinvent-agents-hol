@@ -16,5 +16,5 @@ entries:
       - AI Agents
       - Graph RAG
       - Model Deployment
-    git_url: "https://github.com/shreshtab/reinvent-agents-hol/tree/master"
+    git_url: "https://github.com/shreshtab/reinvent-agents-hol/"
     is_prototype: true
