@@ -111,7 +111,7 @@ info_text = """
 <div class='container'> 
 
 ## Agents that ECSS Can Use
-**📄 ECommerce Policies Agent**
+**📄 ECommerce Policy Agent**
                                
 Agent who is an expert in ECSS' Shipping, Returns and Privacy Policies. 
 
