@@ -1,6 +1,6 @@
 # RAG-based AI Agents with Cloudera AI
 
-The goal of this hands-on lab is to explore Cloudera AI through the lens of the Agentic [Retreival Augmented Generation](https://arxiv.org/abs/2312.10997) (RAG) architecture for Large Language Models. Starting from a simple Jupyter notebook and finishing with a complete chatbot application, participants will get to know some of the key Cloudera AI features and advantages. In a real-world scenario, changing business requirements and technology advancements requires agility and Cloudera AI is a great tool to enable Data Science practitioners to build use cases quickly.
+The goal of this hands-on-lab is to explore Cloudera AI through the lens of the Agentic [Retreival Augmented Generation](https://arxiv.org/abs/2312.10997) (RAG) architecture approach. Starting from a simple Jupyter notebook and finishing with a complete chatbot application, participants will get to know some of the key Cloudera AI features and advantages. In a real-world scenario, changing business requirements and technology advancements requires agility and Cloudera AI is a great tool to enable Data Science practitioners to build use cases quickly.
 
 Because the applications of LLMs can be quite broad across industries, we will hone in on a particular use case for the purposes of this lab.
 
@@ -61,16 +61,16 @@ In this first section, we'll interact with a model (Anthropic's Claude v2) via A
 > **1f.** You will now see a familiar Jupyter notebook interface. In the left navigation panel go to ```1_bedrock_intro``` folder and open ```prototype_with_aws_bedrock.ipynb``` by double-clicking it.
 ![Alt text](./assets/bedrock-file.png)
 
->**1g.** As you walk through the notebook review the explanations and run each cell (you can use ```Enter+Shift``` or ```Command+Enter```). Alternatively, you can click on the "Play" button at the tom of the notebook. When you are finished going through the notebook come back to this guide. 
+>**1g.** As you walk through the notebook review the explanations and run each cell (you can use ```Shift + Enter``` or ```Command + Enter```). Alternatively, you can click on the "Play" button at the tom of the notebook. When you are finished going through the notebook come back to this guide. 
 
-![Alt text](./assets/bedrock-client-setup.png)
+![Alt text](./assets/bedrock-lab-completed.png)
 
 :pencil2: You have now gotten familiar with creating a Cloudera AI session, working with JupyterLab editor and interacted with a 3rd party LLM provider. All within an isolated and secure compute pod.
 
 
 ## 2. Explore your data via Pinecone DB
 
-In this exercise you will interact with the knowledge base that has been loaded in a Pinecone vector database in [Exercise 2](#2-scrape-and-ingest-data-and-populate-pinecone-db). 
+In this exercise you will interact with the knowledge base that has been loaded in a Pinecone vector database in advance of this lab. 
 
 >**2a.** Click on _Sessions_ in the left sidebar. If the session you've created before has expired, click _New Session_ in the top right and follow the steps in **1b**. Otherwise, click on your session to return to it. 
 ![Select Existing Session](./assets/Existing_Session.png)
