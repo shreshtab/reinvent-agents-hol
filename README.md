@@ -105,9 +105,8 @@ Unlike LLM-based chatbots or inference endpoints that you may be familiar with, 
 
 So far we have interacted with our models and vector database through a Jupyter notebook. Now lets see how a user might interact with an LLM solution through a Cloudera AI application. Cloudera AI can be used to deploy UI applications based on popular frameworks (e.g. [flask](https://flask.palletsprojects.com/en/3.0.x/), [streamlit](https://streamlit.io/), [gradio](https://www.gradio.app/)) for deploying applications. In this lab we'll be deploying a gradio app to interact with the model using a chat interface. 
 
-The exercise will walk you through the steps to deploy the application using the UI. We'll also explore how to do this programatically through the Cloudera AI APIv2. 
+The exercise will walk you through the steps to deploy the application using the UI. We'll also explore how to do this programatically through the Cloudera AI APIv2. Below, you can see how we have multiple AI Agents working together within Cloudera AI and how they interact with external AWS and non-AWS services.
 
-### TODO!!!! - Update Architecture Diagram
 **Agentic Workflow Architecture**
 ![Alt text](./assets/agentic-workflow.png)
 
