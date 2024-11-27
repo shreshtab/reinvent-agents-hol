@@ -6,7 +6,7 @@ specification_version: 1.0
 prototype_version: 1.0
 date: "2024-09-28"
 
-environment_variables:
+# environment_variables:
   # AWS_ACCESS_KEY_ID:
   #   default: "aws_key"
   #   description: >-
@@ -28,7 +28,7 @@ runtimes:
   - editor: JupyterLab
     kernel: Python 3.10
     edition: Standard
-    version: 2024.10
+    version: "2024.10"
 
 tasks:
   - type: run_session
