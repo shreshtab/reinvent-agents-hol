@@ -22,7 +22,7 @@ There are currently 4 exercises in the lab. It is important to follow the exerci
 After login, you will be taken to the home screen of Cloudera Data Platform. From here you can access Cloudera AI - one of its Data Services.
 
 > **0a.** Click on the "Cloudera AI" icon.
-![Control Plane to CML](./assets/CDP_Home.png)
+![Control Plane to CML](./assets/new-home-page.png)
 
 > **0b.** Then click on ML Workspace called _reinv24-workspace_.
 ![CML Home Page](./assets/ML_Workspaces_Home.png)
