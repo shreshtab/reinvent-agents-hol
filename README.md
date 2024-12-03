@@ -19,7 +19,7 @@ There are currently 4 exercises in the lab. It is important to follow the exerci
 
 ## 0. Getting into Cloudera AI
 
-After login, you will be taken to the home screen of Cloudera Data Platform. From here you can access Cloudera AI - one of its Data Services.
+After login, you will be taken to the home screen of Cloudera Data Platform. Some of you may be asked to "Try the new UI...". Make sure to click **Enable New UI**. From here you can access Cloudera AI - one of its Data Services.
 
 > **0a.** Click on the "Cloudera AI" icon.
 ![Control Plane to CML](./assets/new-home-page.png)
